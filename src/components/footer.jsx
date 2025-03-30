@@ -9,9 +9,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-container">
-      
+        {/* Left Section */}
         <div className="footer-left">
           <img src={Log} alt="Dispatch logo" className="logo" />
+
           <div className="buttons">
             <a href="https://play.google.com/store" className="google-play">
               <img src={GoogleP} alt="Google Play" />
@@ -20,21 +21,38 @@ const Footer = () => {
               <img src={AppS} alt="App Store" />
             </a>
           </div>
+
           {/* Social Media Icons */}
           <div className="social-icons">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* Replace these placeholders with real links or remove target="_blank" if purely decorative */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <i className="fab fa-twitter"></i>
             </a>
           </div>
         </div>
 
-       
+        {/* Right Section */}
         <div className="footer-right">
           <div className="footer-links">
             <div className="section">
@@ -57,7 +75,7 @@ const Footer = () => {
         </div>
       </div>
 
-     
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <hr />
         <p>© 2024 Dishpatch Africa. All rights reserved.</p>
