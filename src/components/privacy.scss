@@ -1,0 +1,68 @@
+/* privacy.scss */
+.privacy-container {
+    max-width: 100%;
+    
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F8C8A0; 
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color:   #000022;
+      
+    }
+  
+    .last-updated {
+      font-style: italic;
+      margin-bottom: 2rem;
+      color:   #000022;
+    
+    }
+  
+    .policy-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      white-space: pre-line;
+      font-size: 1rem;
+      margin-bottom: 80px;
+    }
+  
+    /* Section headings within the text */
+    strong {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: #2D63A9;
+    }
+  
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+     
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .policy-content {
+        font-size: 0.95rem;
+      }
+  
+      strong {
+        font-size: 1.1rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+  
+      .policy-content {
+        font-size: 0.9rem;
+      }
+    }
+  }

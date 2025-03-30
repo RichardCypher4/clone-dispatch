@@ -1,0 +1,135 @@
+
+.blue-section {
+    background-color: #000022;
+    padding: 9rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    overflow: visible;
+    position: relative;
+    bottom: -100px;
+  
+    .phone-images {
+         position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin-right: 2rem;
+      
+      img {
+        position: relative;
+        top: -100px;
+        left: -120px;
+        z-index: 10;
+        max-width: 500px;
+        width: 100%; 
+        height: auto;
+      }
+  
+      img:nth-child(2) { 
+        top: -30px;
+        left: 50px;
+        transform: rotate(10deg);
+      }
+    }
+  
+    .text-content {
+      flex: 1;
+      
+      h1 {
+        font-size: 2.5rem;
+        color: #ff7b42;
+        margin-bottom: 1rem;
+      }
+      
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        max-width: 500px;
+        line-height: 1.4;
+      }
+      
+      .buttons {
+         display: flex;
+      gap: 1rem;
+      align-items: center; 
+  
+      a {
+        display: inline-block;
+        }
+        
+        a img {
+          width: 140px;
+          height: auto;
+          border-radius: 8px;
+          transition: transform 0.3s ease-in-out;
+          
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .blue-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem 2rem;
+      height: auto;
+    }
+  
+    .text-content {
+      order: 1; 
+    }
+  
+    .buttons {
+      order: 2; 
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+    .phone-images {
+      order: 3; 
+      display: flex;
+      justify-content: center; 
+      margin-bottom: 2rem;
+  
+      img {
+        position: static; 
+        max-width: 320px;
+        height: auto;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blue-section {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .phone-images img {
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blue-section {
+      padding: 1rem ;
+      max-width: 350px;
+      height: 90vh;
+      margin-top: -220px;
+    }
+  
+    .phone-images img {
+      max-width: 240px;
+      margin-left: 300px;
+      margin-top: 100px;
+    }
+  }

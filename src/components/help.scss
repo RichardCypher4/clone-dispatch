@@ -1,0 +1,87 @@
+/* help.scss */
+.help-container {
+    background-color: #F8C8A0;
+  
+    text-align: center;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      font-size: 2.5rem;
+      color:  #000022;
+      margin-bottom: 0.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+      color:  #000022;
+      margin-bottom: 2rem;
+    }
+  
+    .help-sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+      padding: 1.5rem;
+    }
+  
+    .help-card {
+      background: orangered;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow:  0 0 0 2px #000022 ;
+      text-align: left;
+  
+      h2 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+  
+        li {
+          padding: 0.5rem 0;
+          border-bottom: 1px solid #eee;
+          color: #fff;
+  
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  
+    .contact-prompt {
+      margin: 3rem 0;
+      font-size: 1.1rem;
+      color: #000022;
+  
+      a {
+        color: #000022;
+        text-decoration: none;
+        font-weight: bold;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+        .help-sections{
+            padding: 1.5rem;
+        }
+     
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .help-sections {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
