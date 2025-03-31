@@ -111,6 +111,7 @@
   
         .footer-left {
           align-items: center;
+        
   
           .logo {
             width: 120px;
@@ -147,10 +148,16 @@
             .section {
               flex: 1;
               text-align: center;
+              
   
               h3 {
                 color: #ff4500;
                 margin-bottom: 0.5rem;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                
               }
   
               a {

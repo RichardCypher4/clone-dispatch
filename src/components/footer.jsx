@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="footer-right">
           <div className="footer-links">
             <div className="section">
-              <h3>Quick Links</h3>
+              <h3>Links</h3>
               <Link to="/about">About</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/faq">FAQ</Link>
@@ -84,4 +84,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 
